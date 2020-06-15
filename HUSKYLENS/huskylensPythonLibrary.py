@@ -87,7 +87,7 @@ class HuskyLensLibrary:
         elif (proto=="I2C"):
             self.huskylensSer= smbus.SMBus(channel)
         self.lastCmdSent = ""
-
+        
     def writeToHuskyLens(self, cmd):
         self.lastCmdSent = cmd
         if(self.proto=="SERIAL"):
@@ -166,7 +166,14 @@ class HuskyLensLibrary:
                     for i in returnData:
                         tmp=[]
                         for q in range(0,len(i),4):
-                            tmp.append(int(i[q:q+2],16)+int(i[q+2:q+4],16))
+                            low=int(i[q:q+2], 16)
+                            high=int(i[q+2:q+4], 16)
+                            #print(f"here are got low byte of {low} and high byte of {high}")
+                            if(high>0):
+                                val=low+255+high
+                            else:
+                                val=low
+                            tmp.append(val)
                         finalData.append(tmp)
                         tmp=[]
                     return finalData
