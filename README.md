@@ -13,7 +13,7 @@ Github   : <a href="/huskylib.py">Github</a>
 <li>Place the <a href="/huskylib.py">huskylib.py</a> file within your projects folder</li>
 <li><code>from huskylib import HuskyLensLibrary</code></li>
 <li><code>hl = HuskyLensLibrary("SERIAL", "/dev/ttyUSB0")</code></li>
-<li><code>print(h1.command_request_knock()</code></li>
+<li><code>print(h1.knock()</code></li>
 </ul>
 <p>Raspberry Pi (I2C -&gt; Huskylens)</p>
 <ul>
