@@ -37,7 +37,7 @@ On your Raspberry PI you must enable I2C in settings before being able to use it
 
 # III. Coding Guide 
 
-1) Download the Python Library here "INSERT_GITHUB_LINK_HERE"
+1) Download the Python Library <a href="/">here</a>
 2) Run ```sudo i2cdetect -y 1``` 
     > Please remember the address that pops up here, in my case it is 32. This is the I2C address for the HuskyLens
     If the above command returns an error please change to : ```sudo i2cdetct -y 0```
@@ -56,17 +56,18 @@ On your Raspberry PI you must enable I2C in settings before being able to use it
 >```
 >
 > 3) Place the huskylensPythonLibrary.py in your projects folder
-> 4) In your python file , example test.py, import the library using
+> 4) In your python file import the library using
 >
 >```python 
-> from huskylensPythonLibrary import HuskyLensLibrary
+> from huskylib import HuskyLensLibrary
 >```
 
  ```
  5) Init the HuskyLens 
  ```python
  # replace the address value with your I2C address from before in 0x00 form
- my_Var= HuskyLensLibrary("I2C","",address=0x32)
+ hl= HuskyLensLibrary("I2C","",address=0x32)
+ print(hl.knock())
  ```
 
 6) Now begin calling functions !
