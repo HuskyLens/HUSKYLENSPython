@@ -13,7 +13,7 @@ Github   : <a href="/huskylib.py">Github</a>
 <li>Place the <a href="/huskylib.py">huskylib.py</a> file within your projects folder</li>
 <li><code>from huskylib import HuskyLensLibrary</code></li>
 <li><code>hl = HuskyLensLibrary("SERIAL", "/dev/ttyUSB0")</code></li>
-<li><code>print(h1.command_request_knock()</code></li>
+<li><code>print(h1.knock()</code></li>
 </ul>
 <p>Raspberry Pi (I2C -&gt; Huskylens)</p>
 <ul>
@@ -22,9 +22,9 @@ Github   : <a href="/huskylib.py">Github</a>
 </blockquote>
 
 ### Example Script
-You can test out all the functions in our provided example script. Simply run `exampleHL.py` after changing the the connection settings in the beginning of the file. You will need a terminal / IDE to interact with the script. 
+> You can test out all the functions in our provided example script. Simply run `exampleHL.py` after changing the the connection settings in the beginning of the file. You will need a terminal / IDE to interact with the script. 
 
-<h4 id="guide-format-information">Guide Format Information</h4>
+<h4 id="guide-format-information">Function Format Information</h4>
 <blockquote>
 <dl>
 <dt>function_name(ARG1,ARG2,…)</dt>
