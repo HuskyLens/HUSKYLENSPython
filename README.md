@@ -17,7 +17,7 @@ Github   : <a href="/huskylib.py">Github</a>
 </ul>
 <p>Raspberry Pi (I2C -&gt; Huskylens)</p>
 <ul>
-<li>Please refer to our full guide here: <em><strong>INSERT RASPBERRY PI GUIDE</strong></em></li>
+<li>Please refer to our full guide here: <a href="/Raspberry Pi Tutorial.md">Github</a></li>
 </ul>
 </blockquote>
 
