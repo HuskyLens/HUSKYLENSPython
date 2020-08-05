@@ -22,7 +22,7 @@ Github   : <a href="/huskylib.py">Github</a>
 </blockquote>
 
 ### Example Script
-You can test out all the functions in our provided example script. Simply run `exampleHL.py` after changing the the connection settings in the beginning of the file. You will need a terminal / IDE to interact with the script. 
+> You can test out all the functions in our provided example script. Simply run `exampleHL.py` after changing the the connection settings in the beginning of the file. You will need a terminal / IDE to interact with the script. 
 
 <h4 id="guide-format-information">Guide Format Information</h4>
 <blockquote>
